@@ -1,16 +1,16 @@
 {
-	"name": "REST_GoogleAnalyticsReports",
+	"name": "MDbCollection",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "GoogleAnalytics",
+			"referenceName": "MongoDbAtlas",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "RestResource",
+		"type": "MongoDbAtlasCollection",
+		"schema": [],
 		"typeProperties": {
-			"relativeUrl": "/v4/reports:batchGet"
-		},
-		"schema": []
+			"collection": "listingsAndReviews"
+		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }
